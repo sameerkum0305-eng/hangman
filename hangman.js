@@ -21,12 +21,18 @@ clue.innerHTML = clueString;
  
 var guessarea = document.getElementByID("guesses");
   guessArea.innerHtMl = "Guessed Letters: " + guesses;
+
+  var image = document.getElementByID
+  image.src = "images/hangman" + guess.count.gif 
 }
 function guessLetter() {
   var input = document.getElementByID("guess");
   var letter = input.value;
+  if(word.indexOf(letter) < 0) {
+    guess.count--;
   guesses==letter;
 updatePage();
+    
 ]
  
 function guess () {
