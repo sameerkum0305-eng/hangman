@@ -21,7 +21,7 @@ function newGame() {
 
 function guessLetter() {
   var input = document.getElementById("guess");
-  var letter = input.value;
+  var letter = input.value.toLowerCase();;
 
   if (word === "") {   //Feature 4 -- don't allow guesses before word is chosen.
     var guessArea = document.getElementById("guesses");
