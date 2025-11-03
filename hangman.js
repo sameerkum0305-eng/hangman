@@ -14,6 +14,8 @@ function newGame() {
   guesses = "";
   guess_count = MAX_GUESSES;
   game_over = false; //game resets
+  document.getElementById("guess").disabled = false; // enable typing for new game start!
+
   updatePage();
 }
 
