@@ -58,6 +58,7 @@ function guessLetter() {
 }
 
 function updatePage() {
+  var input = document.getElementById("guess"); // <-- Added so input is defined correctly
   var clueString = "";
   for (var i = 0; i < word.length; i++) {
     var currentLetter = word.charAt(i);
@@ -75,7 +76,7 @@ function updatePage() {
   guessArea.innerHTML = "Guessed Letters: " + guesses;
 
   var image = document.getElementById("hangmanImage");
-  image.src = "images/hangman" + guess_count + ".gif";
+  image.src = "./images/hangman" + guess_count + ".gif";
 
   if (clueString.indexOf("_") < 0) { //Feature 1 -- Dialog for winning and losing -> guesses area. 
     game_over = true;
